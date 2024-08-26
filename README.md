@@ -2,7 +2,7 @@
 
   <h2 align="center">AMG: Avatar Motion Guided Video Generation</h2>
   <p align="center">
-    <a href="https://scholar.google.com/citations?user=VaRp0cMAAAAJ&hl=en"><strong>Zhangsihao Yang</strong>
+    <a href="https://scholar.google.com/citations?user=VaRp0cMAAAAJ&hl=en"><strong>Zhangsihao Yang</strong></a>
     ·  
     <a href="https://boese0601.github.io/"><strong>Di Chang</strong></a><sup>*</sup>
     ·
