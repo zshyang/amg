@@ -16,10 +16,7 @@
     ·
     <a href=""><strong>Yalin Wang</strong></a><sup>1</sup>
     <br>
-    University of Southern California
-    <br>
-    <sup>*</sup>Equal Contribution
-    <br>
+    <sup>1</sup>Arizona State University &nbsp;&nbsp;&nbsp; <sup>2</sup>University of Washington
     </br>
         <a href="https://arxiv.org/abs/2403.09069">
         <img src='https://img.shields.io/badge/arXiv-DIM-green' alt='Paper PDF'>
