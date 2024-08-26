@@ -1,8 +1,8 @@
 <p align="center">
 
-  <h2 align="center">Dyadic Interaction Modeling for Social Behavior Generation</h2>
+  <h2 align="center">AMG: Avatar Motion Guided Video Generation</h2>
   <p align="center">
-    <a href="https://scholar.google.com/citations?hl=en&user=HuuQRj4AAAAJ"><strong>Minh Tran</strong></a><sup>*</sup>
+    <a href="https://scholar.google.com/citations?user=VaRp0cMAAAAJ&hl=en"><strong>Zhangsihao Yang</strong>
     ·  
     <a href="https://boese0601.github.io/"><strong>Di Chang</strong></a><sup>*</sup>
     ·
