@@ -2,13 +2,19 @@
 
   <h2 align="center">AMG: Avatar Motion Guided Video Generation</h2>
   <p align="center">
-    <a href="https://scholar.google.com/citations?user=VaRp0cMAAAAJ&hl=en"><strong>Zhangsihao Yang</strong></a>
+    <a href="https://scholar.google.com/citations?user=VaRp0cMAAAAJ&hl=en"><strong>Zhangsihao Yang</strong></a><sup>1</sup>
     ·  
-    <a href="https://shanmy.github.io/"><strong>Mengyi Shan</strong></a>    
+    <a href="https://shanmy.github.io/"><strong>Mengyi Shan</strong></a><sup>2</sup>
     ·
-    <a href="https://scholar.google.com/citations?user=5w0f0OQAAAAJ&hl=ru"><strong>Mohammad Farazi</strong></a>
+    <a href=""><strong>Mohammad Farazi</strong></a><sup>1</sup>
     ·
-    <a href="https://www.ihp-lab.org/"><strong>Wenhui Zhu</strong></a>
+    <a href=""><strong>Wenhui Zhu</strong></a><sup>1</sup>
+    ·
+    <a href=""><strong>Yanxi Chen</strong></a><sup>1</sup>
+    ·
+    <a href=""><strong>Xuanzhao Dong</strong></a><sup>1</sup>
+    ·
+    <a href=""><strong>Yalin Wang</strong></a><sup>1</sup>
     <br>
     University of Southern California
     <br>
