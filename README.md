@@ -32,6 +32,6 @@
     </table>
 </p>
 
-*We propose Dyadic Interaction Modeling, a pre-training strategy that jointly models speakers’ and listeners’ motions and learns representations that capture the dyadic context. We then utilize the pre-trained weights and feed multimodal inputs from the speaker into DIM-Listener. DIM-Listener is capable of generating photorealistic videos for the listener's motion.*
+*Human video generation is a challenging task due to the complexity of human body movements and the need for photorealism. While 2D methods excel in realism, they lack 3D control, and 3D avatar-based approaches struggle with seamless background integration. We introduce AMG, a method that merges 2D photorealism with 3D control by conditioning video diffusion models on 3D avatar renderings. AMG enables multi-person video generation with precise control over camera positions, human motions, and background style, outperforming existing methods in realism and adaptability.*
 
 ## Getting Started 
