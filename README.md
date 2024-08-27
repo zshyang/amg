@@ -38,4 +38,4 @@ _Human video generation is a challenging task due to the complexity of human bod
 
 ## Inference
 
-The weights could be downloaded from [here](https://drive.google.com/file/d/1g274tXyfaA45cy8IkaUJF39iVg5sQNTU/view?usp=sharing)
+The weights could be downloaded from [here](https://drive.google.com/file/d/1g274tXyfaA45cy8IkaUJF39iVg5sQNTU/view?usp=sharing) (5.28GB).
