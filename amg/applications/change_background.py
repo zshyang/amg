@@ -22,12 +22,13 @@ from amg.tools.modules.autoencoder import AutoencoderKL
 from amg.tools.modules.clip_embedder import FrozenOpenCLIPEmbedderZero
 from amg.tools.modules.diffusions.diffusion_ddim import DiffusionDDIM
 from amg.tools.modules.unet.unet_lora import UNetSD_LoRA
+from amg.utils.seed import setup_seed
+from amg.utils.util import to_device
 from easydict import EasyDict
 from einops import rearrange
 from torch.cuda.amp.autocast_mode import autocast
 from torch.utils.data import DataLoader
 from tqdm import tqdm
-from utils.util import to_device
 
 
 def load_cfg(cfg_path) -> Any:
@@ -103,8 +104,8 @@ def setup_data(cfg):
     dataset_type = safe_pop(cfg.vid_dataset, "type", "")
 
     # create dataset
-    if dataset_type == "GHVideoFeatureDataset":
-        dataset = GHVideoFeatureDataset(
+    if dataset_type == "HGVideoFeatureDataset":
+        dataset = HGVideoFeatureDataset(
             **cfg.vid_dataset,
             sample_fps=cfg.sample_fps,
             max_frames=cfg.max_frames,
@@ -283,6 +284,7 @@ def main():
     """
     # load cfg
     cfg = load_cfg_from_argparse()
+    setup_seed(cfg.seed)
 
     # load the dataset
     dataloader = setup_data(cfg)
@@ -324,14 +326,14 @@ def main():
 
         # save the new video
         save_folder = os.path.join(
-            "../_runtime/change_background",
-            cfg.infer_checkpoint.split("/")[-3],
+            cfg.save_folder,
             (
                 cfg.infer_checkpoint.split("/")[-1].split(".")[0] +
                 f"_{cfg.vid_dataset.start_frame}"
             ),
         )
         os.makedirs(save_folder, exist_ok=True)
+
         decode_to_video(
             video_data, cfg, autoencoder,
             os.path.join(save_folder, caption_file_name + "_pred.mp4"),

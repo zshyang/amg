@@ -50,6 +50,23 @@ Run the following command line for installing `amg` package first.
 pip install -e .
 ```
 
+### Change Background
+
+Run the following command to get the change background results:
+
+```bash
+python applications/change_background.py --cfg configs/applications/change_background/demo.yaml
+```
+
+The results are store under newly created folder `_demo_results`.
+You should be able to see exact same results like the following:
+
+<p align="center">
+    <table align="center">
+        <img src="./doc/change_background.gif">
+    </table>
+</p>
+
 ## Folder Structure
 
 - configs

@@ -25,7 +25,7 @@ auto_encoder:
   }
 
 vid_dataset: {
-    "type": "GHVideoFeatureDataset",
+    "type": "HGVideoFeatureDataset",
     "captions_y_dir": "../_demo_data/change_background/captions_y",
     "images_feature_dir": "../_demo_data/change_background/images_feature",
     "hg_images_feature_dir": "../_demo_data/change_background/hg_images_feature",
@@ -98,3 +98,4 @@ new_caption_json_folder_path: ../_demo_data/change_background/background_caption
 save_folder: ../_demo_results/change_background
 
 keep_image: true
+seed: 0401
