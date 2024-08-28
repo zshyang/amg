@@ -3,3 +3,4 @@ _runtime
 **__pycache__**
 **/eo/
 **/*.egg-info/
+_demo_results
