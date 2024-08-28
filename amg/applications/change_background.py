@@ -17,8 +17,7 @@ import cv2
 import imageio
 import torch
 import yaml
-from amg.tools.basic_funcs.pretrain_functions import pretrain_instructvideo
-from amg.tools.datasets.gh_video_feature_dataset import GHVideoFeatureDataset
+from amg.tools.datasets.hg_video_feature_dataset import HGVideoFeatureDataset
 from amg.tools.modules.autoencoder import AutoencoderKL
 from amg.tools.modules.clip_embedder import FrozenOpenCLIPEmbedderZero
 from amg.tools.modules.diffusions.diffusion_ddim import DiffusionDDIM

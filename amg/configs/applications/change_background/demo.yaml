@@ -26,10 +26,10 @@ auto_encoder:
 
 vid_dataset: {
     "type": "GHVideoFeatureDataset",
-    "captions_y_dir": "../_data/processed/captions_y",
-    "images_feature_dir": "../_data/processed/images_feature",
-    "gh_images_feature_dir": "../_data/processed/gh_images_feature",
-    "zero_y_path": "../_data/processed/zero_y.pt",
+    "captions_y_dir": "../_demo_data/change_background/captions_y",
+    "images_feature_dir": "../_demo_data/change_background/images_feature",
+    "hg_images_feature_dir": "../_demo_data/change_background/hg_images_feature",
+    "zero_y_path": "../_demo_data/zero_y.pt",
     "use_small_batch": false,
     "start_frame": 5240, # ====================================================
   }
@@ -51,7 +51,7 @@ UNet: {
     "use_checkpoint": True,
     "use_fps_condition": False,
     "use_sim_mask": False,
-    "use_lora": true, # =======================================================
+    "use_lora": true,
     "lora_rank": 4,
     "lora_alpha", # In yaml, 'None' does not need to be specified.
   }
@@ -79,7 +79,7 @@ grad_scale: {
   }
 
 # VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-infer_checkpoint: ../_runtime/save_dir/gh2v_train_square_ddim_resume_0816-21-18/checkpoints/non_ema_0640000.pth
+infer_checkpoint: ../_runtime/non_ema_0640000.pth
 
 concat_input: true
 scale_factor: 0.18215
@@ -93,6 +93,8 @@ guide_scale: 3.0
 ddim_timesteps: 20
 use_fp16: true
 
-new_caption_json_folder_path: ../demo_data/change_background
+new_caption_json_folder_path: ../_demo_data/change_background/background_caption_json
+
+save_folder: ../_demo_results/change_background
 
 keep_image: true
