@@ -42,7 +42,7 @@ Download [model.zip](https://drive.google.com/file/d/1n979-fIwIBlxqavI_lJQFFrMUK
 
 ## Inference
 
-The weights could be downloaded from [here](https://drive.google.com/file/d/1g274tXyfaA45cy8IkaUJF39iVg5sQNTU/view?usp=sharing) (5.28GB).
+The weights for inference could be downloaded from [here](https://drive.google.com/file/d/1g274tXyfaA45cy8IkaUJF39iVg5sQNTU/view?usp=sharing) (5.28GB).
 
 Run the following command line for installing `amg` package first.
 

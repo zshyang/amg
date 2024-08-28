@@ -338,15 +338,15 @@ def main():
             video_data, cfg, autoencoder,
             os.path.join(save_folder, caption_file_name + "_pred.mp4"),
         )
-        decode_to_video(
-            gh_video_feature_data, cfg,
-            autoencoder,
-            os.path.join(save_folder, caption_file_name + "_gh.mp4"),
-        )
-        decode_to_video(
-            video_feature_data, cfg, autoencoder,
-            os.path.join(save_folder, caption_file_name + "_gt.mp4"),
-        )
+        # decode_to_video(
+        #     gh_video_feature_data, cfg,
+        #     autoencoder,
+        #     os.path.join(save_folder, caption_file_name + "_gh.mp4"),
+        # )
+        # decode_to_video(
+        #     video_feature_data, cfg, autoencoder,
+        #     os.path.join(save_folder, caption_file_name + "_gt.mp4"),
+        # )
 
 
 if __name__ == "__main__":
