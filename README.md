@@ -36,6 +36,21 @@ _Human video generation is a challenging task due to the complexity of human bod
 
 ## Getting Started
 
+Make `vgen` virual environment.
+
+Download [model.zip](https://drive.google.com/file/d/1n979-fIwIBlxqavI_lJQFFrMUKcJwqjI/view?usp=sharing) to `_runtime` and unzip it.
+
 ## Inference
 
 The weights could be downloaded from [here](https://drive.google.com/file/d/1g274tXyfaA45cy8IkaUJF39iVg5sQNTU/view?usp=sharing) (5.28GB).
+
+Run the following command line for installing `amg` package first.
+
+```bash
+pip install -e .
+```
+
+## Folder Structure
+
+- configs
+- demo_data
