@@ -52,7 +52,7 @@ pip install -e .
 
 ### Change Background
 
-Run the following command to get the change background results:
+Run the command below to get **change background** results:
 
 ```bash
 python applications/change_background.py --cfg configs/applications/change_background/demo.yaml
@@ -61,11 +61,18 @@ python applications/change_background.py --cfg configs/applications/change_backg
 The results are store under newly created folder `_demo_results`.
 You should be able to see exact same results like the following:
 
-<p align="center">
-    <table align="center">
-        <img src="./doc/change_background.gif">
-    </table>
-</p>
+<table align="center">
+    <tr>
+        <th style="text-align:center;">Input</th>
+        <th style="text-align:center;">Reference</th>
+        <th style="text-align:center;">Generated</th>
+    </tr>
+    <tr>
+        <td colspan="3" align="center">
+            <img src="./doc/change_background.gif" alt="GIF description">
+        </td>
+    </tr>
+</table>
 
 ## Folder Structure
 

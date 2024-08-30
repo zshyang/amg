@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        // applications.change_background
+        {
+            "args": [
+                "--cfg",
+                "configs/applications/change_background/demo.yaml",
+            ],
+            "console": "integratedTerminal",
+            "cwd": "/scratch/zyang195/projects/video/tmp_git/amg/amg",
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            },
+            "justMyCode": true,
+            "name": "applications.change_background",
+            "program": "applications/change_background.py",
+            "request": "launch",
+            "type": "debugpy",
+        },
+    ]
+}
