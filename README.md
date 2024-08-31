@@ -18,18 +18,18 @@
     <br>
     <sup>1</sup>Arizona State University &nbsp;&nbsp;&nbsp; <sup>2</sup>University of Washington
     </br>
-        <a href="https://arxiv.org/abs/2403.09069">
+        <!-- <a href="https://arxiv.org/abs/2403.09069">
         <img src='https://img.shields.io/badge/arXiv-DIM-green' alt='Paper PDF'>
-        </a>
-        <a href='https://boese0601.github.io/dim/'>
-        <img src='https://img.shields.io/badge/Project_Page-DIM-blue' alt='Project Page'></a>
+        </a> -->
+        <a href='https://zshyang.github.io/amg-website/'>
+        <img src='https://img.shields.io/badge/Project_Page-AMG-blue' alt='Project Page'></a>
         <!-- <a href='https://youtu.be/VPJe6TyrT-Y'>
         <img src='https://img.shields.io/badge/YouTube-MagicPose-rgb(255, 0, 0)' alt='Youtube'></a> -->
      </br>
-    <table align="center">
+    <!-- <table align="center">
         <img src="./assets/demo1.gif">
         <img src="./assets/demo2.gif">
-    </table>
+    </table> -->
 </p>
 
 _Human video generation is a challenging task due to the complexity of human body movements and the need for photorealism. While 2D methods excel in realism, they lack 3D control, and 3D avatar-based approaches struggle with seamless background integration. We introduce AMG, a method that merges 2D photorealism with 3D control by conditioning video diffusion models on 3D avatar renderings. AMG enables multi-person video generation with precise control over camera positions, human motions, and background style, outperforming existing methods in realism and adaptability._
@@ -73,6 +73,22 @@ You should be able to see exact same results like the following:
         </td>
     </tr>
 </table>
+
+### Move Camera
+
+Run the command below to get **move camera** results:
+
+```bash
+python applications/move_camera.py --cfg configs/applications/move_camera/demo.yaml
+```
+
+## Traning
+
+### Download data
+
+1. Fill out [this google form](https://forms.gle/xrx4sfAn7QAWgiXq9) for reqeusting of the processed dataset in the paper.
+
+2. Put the downloaded data under `_data`.
 
 ## Folder Structure
 
