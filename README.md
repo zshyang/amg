@@ -34,23 +34,37 @@
 
 _Human video generation is a challenging task due to the complexity of human body movements and the need for photorealism. While 2D methods excel in realism, they lack 3D control, and 3D avatar-based approaches struggle with seamless background integration. We introduce AMG, a method that merges 2D photorealism with 3D control by conditioning video diffusion models on 3D avatar renderings. AMG enables multi-person video generation with precise control over camera positions, human motions, and background style, outperforming existing methods in realism and adaptability._
 
-## Getting Started
+## 0. Getting Started
 
 Make `vgen` virual environment.
 
 Download [model.zip](https://drive.google.com/file/d/1n979-fIwIBlxqavI_lJQFFrMUKcJwqjI/view?usp=sharing) to `_runtime` and unzip it.
 
-## Inference
+## 1. Inference
+
+### 1.1 Preparation
+
+1. Download weight
 
 The weights for inference could be downloaded from [here](https://drive.google.com/file/d/1g274tXyfaA45cy8IkaUJF39iVg5sQNTU/view?usp=sharing) (5.28GB).
 
-Run the following command line for installing `amg` package first.
+2. Install `amg` package
+
+Run the following command line for installing `amg` package.
 
 ```bash
 pip install -e .
 ```
 
-### Change Background
+### 1.2 Try it out!
+
+Once finish the steps above, you could try any of the following examples:
+
+1. change background
+2. move camera
+3. change motion
+
+### 1.2.1 Change Background
 
 Run the command below to get **change background** results:
 
@@ -58,7 +72,7 @@ Run the command below to get **change background** results:
 python applications/change_background.py --cfg configs/applications/change_background/demo.yaml
 ```
 
-The results are store under newly created folder `_demo_results`.
+The results are store under newly created folder `_demo_results/change_background`.
 You should be able to see exact same results like the following:
 
 <table align="center">
@@ -74,13 +88,28 @@ You should be able to see exact same results like the following:
     </tr>
 </table>
 
-### Move Camera
+### 1.2.2 Move Camera
 
 Run the command below to get **move camera** results:
 
 ```bash
 python applications/move_camera.py --cfg configs/applications/move_camera/demo.yaml
 ```
+
+The results are store under newly created folder `_demo_results/move_camera`.
+You should be able to see exact same results like the following:
+
+<table align="center">
+    <tr>
+        <th style="text-align:center;">Input</th>
+        <th style="text-align:center;">Generated</th>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <img src="./doc/move_camera.gif" alt="GIF description">
+        </td>
+    </tr>
+</table>
 
 ## Traning
 

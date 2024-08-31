@@ -1,0 +1,94 @@
+embedder:
+  {
+    "layer": "penultimate",
+    "pretrained": "../_runtime/models/stable-diffusion-v/open_clip_pytorch_model.bin",
+  }
+
+auto_encoder:
+  {
+    "ddconfig":
+      {
+        "double_z": True,
+        "z_channels": 4,
+        "resolution": 256,
+        "in_channels": 3,
+        "out_ch": 3,
+        "ch": 128,
+        "ch_mult": [1, 2, 4, 4],
+        "num_res_blocks": 2,
+        "attn_resolutions": [],
+        "dropout": 0.0,
+        "video_kernel_size": [3, 1, 1],
+      },
+    "embed_dim": 4,
+    "pretrained": "../_runtime/models/v2-1_512-ema-pruned.ckpt",
+  }
+
+vid_dataset:
+  {
+    "gh_images_dir": "../_demo_data/move_camera",
+    "zero_y_path": "../_demo_data/zero_y.pt",
+    "start_frame": 0,
+  }
+
+UNet:
+  {
+    "in_dim": 4,
+    "dim": 320,
+    "y_dim": 1024,
+    "context_dim": 1024,
+    "out_dim": 4,
+    "dim_mult": [1, 2, 4, 4],
+    "num_heads": 8,
+    "head_dim": 64,
+    "num_res_blocks": 2,
+    "attn_scales": [1.0, 0.5, 0.25],
+    "dropout": 0.1,
+    "temporal_attention": True,
+    "temporal_attn_times": 1,
+    "use_checkpoint": True,
+    "use_fps_condition": False,
+    "use_sim_mask": False,
+    "use_lora": true,
+    "lora_rank": 4,
+    "lora_alpha",
+  }
+
+Diffusion:
+  {
+    "schedule": "linear_sd",
+    "schedule_param":
+      {
+        "num_timesteps": 1000,
+        "init_beta": 0.00085,
+        "last_beta": 0.0120,
+        "zero_terminal_snr": False,
+      },
+    "mean_type": "eps",
+    "loss_type": "mse",
+    "var_type": "fixed_small",
+    "rescale_timesteps": False,
+    "noise_strength": 0.,
+  }
+
+grad_scale: { "spatial": 1, "temporal": 1 }
+
+infer_checkpoint: ../_runtime/non_ema_0640000.pth
+
+concat_input: true
+scale_factor: 0.18215
+
+sample_fps: 8
+max_frames: 16
+
+batch_sizes: { "16": 1 }
+
+guide_scale: 3.0
+ddim_timesteps: 20
+use_fp16: true
+
+save_dir: ../_demo_results/move_camera
+
+resolution: [256, 256]
+mean: [0.5, 0.5, 0.5]
+std: [0.5, 0.5, 0.5]

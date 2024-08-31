@@ -1,0 +1,5 @@
+ENABLE: true
+DATASET: webvid10m
+log_dir: "test"
+batch_sizes: { "1": 8 }
+seed: 8888
