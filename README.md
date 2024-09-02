@@ -119,7 +119,7 @@ You should be able to see exact same results like the following:
 </details>
 
 <details>
-<summary> <strong style="font-size: 1.10em;">1.2.1 Change Motion</strong></summary>
+<summary> <strong style="font-size: 1.10em;">1.2.3 Change Motion</strong></summary>
 
 </details>
 
