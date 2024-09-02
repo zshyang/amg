@@ -64,7 +64,8 @@ Once finish the steps above, you could try any of the following examples:
 2. move camera
 3. change motion
 
-### 1.2.1 Change Background
+<details>
+<summary> <strong style="font-size: 1.10em;">1.2.1 Change Background</strong></summary>
 
 Run the command below to get **change background** results:
 
@@ -77,9 +78,9 @@ You should be able to see exact same results like the following:
 
 <table align="center">
     <tr>
-        <th style="text-align:center;">Input</th>
-        <th style="text-align:center;">Reference</th>
-        <th style="text-align:center;">Generated</th>
+        <th style="text-align:center; width: 33%;">Input</th>
+        <th style="text-align:center; width: 33%;">Reference</th>
+        <th style="text-align:center; width: 33%;">Generated</th>
     </tr>
     <tr>
         <td colspan="3" align="center">
@@ -87,6 +88,12 @@ You should be able to see exact same results like the following:
         </td>
     </tr>
 </table>
+
+</details>
+
+<details>
+
+<summary> <strong style="font-size: 1.10em;">1.2.1 Change Background</strong></summary>
 
 ### 1.2.2 Move Camera
 
@@ -101,8 +108,8 @@ You should be able to see exact same results like the following:
 
 <table align="center">
     <tr>
-        <th style="text-align:center;">Input</th>
-        <th style="text-align:center;">Generated</th>
+        <th style="text-align:center; width: 50%;">Input</th>
+        <th style="text-align:center; width: 50%;">Generated</th>
     </tr>
     <tr>
         <td colspan="2" align="center">
@@ -111,6 +118,13 @@ You should be able to see exact same results like the following:
     </tr>
 </table>
 
+</details>
+
+<details>
+<summary> <strong style="font-size: 1.10em;">1.2.1 Change Motion</strong></summary>
+
+</details>
+
 ## Traning
 
 ### Download data
@@ -118,6 +132,12 @@ You should be able to see exact same results like the following:
 1. Fill out [this google form](https://forms.gle/xrx4sfAn7QAWgiXq9) for reqeusting of the processed dataset in the paper.
 
 2. Put the downloaded data under `_data`.
+
+### Start training
+
+```bash
+python train_net_ddp.py --cfg configs/train.yaml
+```
 
 ## Folder Structure
 
