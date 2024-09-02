@@ -93,9 +93,7 @@ You should be able to see exact same results like the following:
 
 <details>
 
-<summary> <strong style="font-size: 1.10em;">1.2.1 Change Background</strong></summary>
-
-### 1.2.2 Move Camera
+<summary> <strong style="font-size: 1.10em;">1.2.2 Move Camera</strong></summary>
 
 Run the command below to get **move camera** results:
 
