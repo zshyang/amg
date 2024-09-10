@@ -18,9 +18,9 @@
     <br>
     <sup>1</sup>Arizona State University &nbsp;&nbsp;&nbsp; <sup>2</sup>University of Washington
     </br>
-        <!-- <a href="https://arxiv.org/abs/2403.09069">
-        <img src='https://img.shields.io/badge/arXiv-DIM-green' alt='Paper PDF'>
-        </a> -->
+        <a href="https://arxiv.org/abs/2409.01502">
+        <img src='https://img.shields.io/badge/arXiv-AMG-green' alt='Paper PDF'>
+        </a>
         <a href='https://zshyang.github.io/amg-website/'>
         <img src='https://img.shields.io/badge/Project_Page-AMG-blue' alt='Project Page'></a>
         <!-- <a href='https://youtu.be/VPJe6TyrT-Y'>
@@ -36,7 +36,55 @@ _Human video generation is a challenging task due to the complexity of human bod
 
 ## 0. Getting Started
 
-Make `vgen` virual environment.
+### 0.1 Setting Up the `vgen` Virtual Environment
+
+<details>
+<summary>Two Methods</summary>
+
+#### Method 1: With `sudo` Privileges
+
+Follow the instructions from [vgen](https://github.com/ali-vilab/VGen).
+
+You might need to install `diffusers` and other possible packages.
+
+```bash
+conda create -n vgen python=3.8
+conda activate vgen
+
+pip install torch==1.12.0+cu113 torchvision==0.13.0+cu113 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu113
+
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+sudo apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+```
+
+#### Method 2: Using `slurm` and `mamba`
+
+For slurm-based environments (`mamba` or `conda`), modified from [vgen](https://github.com/ali-vilab/VGen).
+
+```bash
+module load mamba/latest
+
+module load cuda-11.3.1-gcc-12.1.0
+
+mamba create -p /scratch/<user_id>/envs/vgen python=3.8 -y
+
+mkdir -p /scratch/<user_id>/envs/vgen/opt
+cd /scratch/<user_id>/envs/vgen/opt
+
+git clone https://github.com/ali-vilab/VGen.git
+
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+pip install torch==2.2.0 torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+
+python -m pip install diffusers==0.23.0
+python -m pip install ffmpeg-python
+```
+
+</details>
+
+### 0.2 Download Initialization Models
 
 Download [model.zip](https://drive.google.com/file/d/1n979-fIwIBlxqavI_lJQFFrMUKcJwqjI/view?usp=sharing) to `_runtime` and unzip it.
 
