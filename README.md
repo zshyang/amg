@@ -169,6 +169,27 @@ You should be able to see exact same results like the following:
 <details>
 <summary> <strong style="font-size: 1.10em;">1.2.3 Change Motion</strong></summary>
 
+Run the command below to get **change motion** results:
+
+```bash
+python applications/change_motion.py --cfg configs/applications/change_motion/demo.yaml
+```
+
+The results are store under newly created folder `_demo_results/change_motion`.
+You should be able to see exact same results like the following:
+
+<table align="center">
+    <tr>
+        <th style="text-align:center; width: 50%;">Generated</th>
+        <th style="text-align:center; width: 50%;">Input</th>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <img src="./doc/change_motion.gif" alt="GIF description">
+        </td>
+    </tr>
+</table>
+
 </details>
 
 ## Traning
